@@ -1,0 +1,593 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unimart</title>
+    <style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    overflow-x:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* TOP NAVBAR */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:black;
+    color:white;
+    padding:15px 20px;
+    font-size:20px;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.navbar button{
+    padding:8px 15px;
+    border:none;
+    border-radius:10px;
+    background:greenyellow;
+    cursor:pointer;
+}
+
+/* SECOND NAVBAR */
+
+.navbar2{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    padding:20px;
+}
+
+.nav2content img{
+    max-width:200px;
+    width:100%;
+}
+
+.input{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.input input{
+    width:100%;
+    max-width:500px;
+    padding:15px;
+    border-radius:12px;
+}
+
+.nav2list{
+    display:flex;
+    gap:20px;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+/* THIRD NAVBAR */
+
+.nav3{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:20px;
+    background:gainsboro;
+    padding:20px;
+}
+
+.list{
+    display:flex;
+    list-style:none;
+    gap:40px;
+    flex-wrap:wrap;
+    text-transform:capitalize;
+}
+
+.list2{
+    display:flex;
+    list-style:none;
+    gap:20px;
+    flex-wrap:wrap;
+    text-transform:capitalize;
+}
+
+/* CATEGORY CIRCLES */
+
+.circle{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:30px;
+    margin:20px;
+}
+
+.circle img{
+    border-radius:50%;
+    width:150px;
+    max-width:100%;
+}
+
+/* MAIN */
+
+.body{
+    display:flex;
+    gap:30px;
+    padding:20px;
+    flex-wrap:wrap;
+}
+
+/* LEFT SIDEBAR */
+
+.leftcard{
+    width:250px;
+    border:1px solid;
+    border-radius:12px;
+    padding:20px;
+}
+
+.leftlist{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    list-style:none;
+    margin:20px 0;
+}
+
+.leftlist li:hover{
+    background:navajowhite;
+    border-radius:8px;
+}
+
+.moneyrow li{
+    list-style:none;
+    color:blueviolet;
+}
+
+.moneyrow li:hover{
+    background:yellowgreen;
+    border-radius:8px;
+}
+
+.rytside{
+    list-style:none;
+    color:green;
+}
+
+.rytside li:hover{
+    background:aquamarine;
+    border-radius:8px;
+}
+
+.list2{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.leftbutton{
+    display:flex;
+    justify-content:space-between;
+    margin-top:20px;
+}
+
+.button1 button{
+    padding:10px;
+    border-radius:10px;
+}
+
+.button1 button:hover{
+    background:cadetblue;
+}
+
+.search input{
+    width:100%;
+    padding:10px;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+/* RIGHT SIDE */
+
+.mid{
+    flex:1;
+}
+
+.mid .list{
+    color:red;
+    justify-content:space-around;
+}
+
+/* FIRST ROW */
+
+.card{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.card11{
+    width:320px;
+    border:1px solid;
+    border-radius:12px;
+    padding:10px;
+}
+
+.card11 img{
+    width:100%;
+    height:auto;
+}
+
+.card11:hover{
+    background:aqua;
+}
+
+/* SECOND ROW */
+
+.secndcard{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:25px;
+}
+
+.card22{
+    width:320px;
+    border:1px solid;
+    border-radius:12px;
+    padding:10px;
+}
+
+.card22 img{
+    width:100%;
+    height:auto;
+}
+
+.card22:hover{
+    background:gold;
+}
+
+/* FOOTER */
+
+.foot{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:30px;
+    background:rosybrown;
+    margin-top:30px;
+}
+
+.left{
+    max-width:350px;
+}
+
+.footlist{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.footlist li:hover{
+    background:aqua;
+    border-radius:8px;
+}
+
+.name input{
+    width:100%;
+    max-width:220px;
+    padding:10px;
+    border-radius:10px;
+    margin-top:15px;
+}
+
+.name input::placeholder{
+    text-align:center;
+    color:red;
+}
+
+.name input:hover{
+    background:gold;
+}
+
+/* HOVER EFFECTS */
+
+.list li:hover{
+    background:blanchedalmond;
+    border-radius:8px;
+}
+
+/* MOBILE */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .navbar2{
+        flex-direction:column;
+    }
+
+    .nav2list{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .nav3{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .list{
+        justify-content:center;
+        gap:20px;
+    }
+
+    .body{
+        flex-direction:column;
+    }
+
+    .leftcard{
+        width:100%;
+    }
+
+    .card11,
+    .card22{
+        width:100%;
+    }
+
+    .circle img{
+        width:120px;
+    }
+
+    .foot{
+        flex-direction:column;
+        text-align:center;
+        align-items:center;
+    }</style>
+
+
+        
+</head>
+<body>
+    <div class="container">
+    <header class="head">
+        <div class="navbar">
+        <p><strong>envato</strong>market</p>
+        <button>Buy now</button>
+        </div>
+        <div class="navbar2">
+            <div class="nav2content">
+            <img src="https://html.getunimart.com/assets/images/logo/logo.webp" alt="logo" width="200px">
+              </div>
+              <div class="input">
+            <input type="text" placeholder="search for something">
+            </div>
+            <ul class="nav2list">
+                <li> <a href="hotline">Hotline</a></li>
+                <li> <a href="log">log in/sign up</a></li>
+                <li> <a href="cart">total cart</a></li>
+            </ul>
+            
+          
+        </div>
+        <div class="nav3">
+            <div class="content">
+                <ul class="list">
+            
+                    <li><a href="3">core</a></li>
+                    <li><a href="4">demos</a></li>
+                    <li><a href="5">shop</a></li>
+                    <li><a href="4">pages</a></li>
+                    <li><a href="4">elements</a></li>
+                    <li><a href="4">more</a></li>
+                </ul>
+            </div>
+            <div class="rightlist">
+                <ul class="list2">
+                    <li><a href="1">special offers</a></li>
+                    <li><a href="2">recent viewed</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="circle">
+            <div class="circle1">
+            <img src="https://html.getunimart.com/assets/images/catagory-img/cat-img-01.webp" alt="applephone" width="150px">
+            <!-- <p>harry</p> cl -->
+        </div>
+            <div class="circle2">
+            <img src="https://html.getunimart.com/assets/images/catagory-img/cat-img-02.webp" alt="jacket and polo" width="150px">
+            <!-- <p>harry</p> -->
+            </div>
+            <div class="circle3">
+            <img src="https://html.getunimart.com/assets/images/catagory-img/cat-img-03.webp" alt="applephone" width="150px">
+            <!-- <p>harry</p> -->
+            </div>
+            <div class="circle4">
+            <img src="https://html.getunimart.com/assets/images/catagory-img/cat-img-04.webp" alt="applephone" width="150px">
+            <!-- <p>harry</p> -->
+            </div>
+            <div class="circle5">
+            <img src="https://html.getunimart.com/assets/images/catagory-img/cat-img-06.webp" alt="applephone" width="150px">
+            <!-- <p>harry</p> -->
+            </div>
+            <div class="circle6">
+            <img src="https://html.getunimart.com/assets/images/catagory-img/cat-img-03.webp" alt="applephone" width="150px">
+            <!-- <p>harry</p> -->
+            </div>
+            
+            
+        </div>
+        <hr>
+    </header>
+    <main class="body">
+        <div class="leftcard">
+            <!-- <h3>filter and refine</h3> -->
+            <h3>Categories</h3>
+            <ul class="leftlist">
+                <li>accessories</li>
+                <li>best seller</li>
+                <li>computers and tables</li>
+                <li>home audio and theatre</li>
+                <li>theatre accessories</li>
+                <li>media streamers</li>
+            </ul>
+            <hr>
+            <div class="list2">
+                <div class="moneyrow">
+                <ul class="money">
+                    <li>under 25$</li>
+                    <li>25$ to 50$</li>
+                    <li>50$ to 100$</li>
+                    <li>100$ to 200$</li>
+                    <li>200$ and above</li>
+                </ul>
+                      </div>
+                      <div class="side">
+                <ul class="rytside">
+                    <li>9</li>
+                    <li>12</li>
+                    <li>67</li>
+                    <li>30</li>
+                    <li>89</li>
+
+                </ul>
+                </div>
+                
+                
+                /* <!-- <div class="leftbutton">
+                    <div class="button1">
+                        <button>$ Min</button>
+                    </div>
+                    <div class="button2">
+                        <button>$ Max</button>
+                    </div>
+                    <div class="button3">
+                        <button>$ G0</button>
+                    </div>
+
+                </div> --> */
+            </div>
+             <div class="leftbutton">
+                    <div class="button1">
+                        <button>$ Min</button>
+                    </div>
+                    <div class="button1">
+                        <button>$ Max</button>
+                    </div>
+                    <div class="button1">
+                        <button>$ G0</button>
+                    </div>
+
+                </div>
+                <br>
+                <hr>
+                <div class="leftdown">
+                    <div class="leftbottom">
+                    <h3>filter by color</h3>
+                    <div class="search">
+                        <input type="text" placeholder="search and select product">
+                    </div>
+                    </div>
+
+                </div>
+
+        </div>
+        <div class="mid">
+            <ul class="list">
+                <li>featured</li>
+                <li>best sellers</li>
+                <li>top rated</li>
+                <li>new</li>
+                <li>top items</li>
+                <li>popular item</li>
+            </ul>
+            <div class="cards">
+                <div class="card">
+                    <div class="card11">
+                  <img src="https://html.getunimart.com/assets/images/product-img/electronics/electronics-bg-trans-10-a-1-hover.webp" alt="" width="300px"><br>
+                  electronics and gadgets <br>
+                  Ultra-Thin Modern Tech Quiet Noise <br> Cancelling Laptop
+
+                  </div>
+                  <div class="card11">
+                  <img src="https://html.getunimart.com/assets/images/product-img/electronics/electronics-bg-trans-03-a-1-hover.webp" alt="" width="300px">
+                  <br>
+                  Watch & Music <br>
+Cubitt Smart Watch CTS Waterproof Fitness <br>Tracker Watch PRO
+                  </div>
+                  <div class="card11">
+                  <img src="https://html.getunimart.com/assets/images/product-img/electronics/electronics-bg-trans-12-a-1-hover.webp" alt="" width="300px">
+                  <br>
+                  Photography & Outdoor <br>
+Keurig Polaroid 4K Waterproof Smart <br>Action Camera
+                  </div>
+                </div>
+
+            </div>
+            <div class="secndcard">
+                <div class="card22">
+                    <img src="https://html.getunimart.com/assets/images/product-img/electronics/electronics-bg-trans-11-a-1-hover.webp" alt="" width="300px">
+                    <p>camera and photo</p>
+                    <p>Apple IPhone 16 PRO max 6200U with 12GB <br>RAM Phone</p>
+                </div>
+                <div class="card22">
+                    <img src="https://html.getunimart.com/assets/images/product-img/electronics/electronics-bg-trans-05-a-1-hover.webp" alt="" width="300px">
+                    <p>electronics and gadgets</p>
+                    <p>Logitech Precision 9 Button Ergonomic Diital <br> Wireless Mouse</p>
+                </div>
+                <div class="card22">
+                    <img src="https://html.getunimart.com/assets/images/product-img/electronics/electronics-bg-trans-08-a-1-hover.webp" alt="" width="300px">
+                    <p>photography and outdoor</p>
+                    <p>Keurig Polaroid 4K Waterproof Smart Action Camera</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="foot">
+        <div class="left">
+            <img src="https://html.getunimart.com/assets/images/logo/logo.webp" alt="" width="200px">
+            <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software.
+
+Download App on Mobile:</p>
+<div class="app">
+    <img src="https://html.getunimart.com/assets/images/footer/apple-store-logo.webp" alt="" width="140px">
+    <img src="https://html.getunimart.com/assets/images/footer/play-store-logo.webp" alt="" width="150px">
+    <div class="name">
+        <input type="text" placeholder="enter email">
+    </div>
+</div>
+        </div>
+        <div class="rightfoot">
+            <ul class="footlist">
+                <li>make money with us</li>
+                <li>sell on unimart</li>
+                <li>sell your services</li>
+                <li>sell your apps</li>
+                <li>become an affiliate</li>
+                <li>sell with us</li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
