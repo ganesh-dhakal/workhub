@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pexels</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin:0;
+            /* background-color: #F2F3F5; */
+            padding: 0px;
+            box-sizing: border-box;
+            text-transform: capitalize;
+            font-family: cursive;
+        }
+        .navbar{
+            background-color: #F2F3F5;
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            padding-top: 10px;
+            text-transform: capitalize;
+            font-size: 20px;
+            /* padding: 20px; */
+            /* margin-top: 10px; */
+            padding-bottom: 30px;
+        }
+        .list{
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+            margin-right: 20px;
+            /* padding-top: 20px; */
+        }
+        #pexels{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-left: 10px;
+        }
+        
+        .list button{
+             text-transform: capitalize;
+             padding: 8px;
+            color: white;
+            background-color: black;
+            border-radius: 9px;
+            margin-bottom: 6px;
+           
+        }
+        .middle{
+            display: flex;
+            justify-content: space-between;
+            /* flex-direction: column; */
+            gap: 20px;
+        }
+        .leftpara{
+            font-size: 40px;
+        }
+        .midleft{
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .leftsearch{
+            display: flex;
+            gap: 40px;
+        }
+        .icon{
+            border: 3px solid #e4e4e4;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+        .belowlist{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-transform: capitalize;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+
+        }
+        .midlist{
+            display: flex;
+            list-style-type: none;
+            gap: 40px;
+            margin-top: 40px;
+        }
+        
+        .belowhome{
+            display: flex;
+            justify-content: space-between;
+            text-transform: capitalize;
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .belowmid{
+            text-transform: capitalize;
+        }
+       
+        .belowfree{
+            display: flex;
+            gap: 20px;
+            border: 1px solid;
+
+        }
+        .lists{
+            display: flex;
+            list-style-type: none;
+            gap: 20px;
+        }
+        .card{
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            text-transform: capitalize;
+            /* padding: 10px; */
+            /* padding: 20px; */
+        }
+        .firstcard{
+            border: 3px solid #e4e4e4;
+            border-radius: 22px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding: 10px;
+            margin-left: 10px;
+            
+        }
+        .seccard{
+            border: 3px solid #e4e4e4;
+            /* color: wheat; */
+            padding-left: 40px;
+            padding-right: 40px;
+            border-radius: 22px;
+            padding: 10px;
+            margin-right: 10px
+        }
+        .seclist{
+            list-style-type: none;
+            display: flex;
+            gap:120px
+            
+        }
+        .firstlist{
+            list-style-type: none;
+            display: flex;
+            /* justify-content: space-around; */
+            gap: 120px;
+        }
+        .pop{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif */
+            font-size: 20px;
+        }
+        .secpop{
+            display: flex;
+            justify-content: space-between;
+            /* padding: 20px; */
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .photo{
+            display: flex;
+            gap: 20px;
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .photosection{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        #home{
+            border: 1px solid;
+            padding: 7px;
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            /* margin-bottom: 3px; */
+            cursor: pointer;
+            /* background-position: 4px; */
+            transition: background-color 0.2s ease;
+
+            
+        }
+        #home:hover{
+            background-color: blue;
+        }
+        .rytcard{
+            background-image: url(https://images.pexels.com/photos/31501015/pexels-photo-31501015.jpeg);
+            background-size: cover;
+            margin-right: 40px;
+            background-position: center;
+            width: 100%;
+            max-width: 200px;
+            height: 250px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items:center;
+
+        }
+        .textphoto{
+            color: white;
+            font-size: 12px;
+            /* display: flex; */
+            padding: 20px 20px 20px;
+        }
+        .fashion-card {
+  background-image: url('https://images.pexels.com/photos/28606905/pexels-photo-28606905.jpeg');
+  
+  
+  background-size: cover;
+  background-position: center 30%; /
+  width: 100%;;
+  max-width: 200px;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: center;
+  overflow: hidden;
+}
+
+.text-overlay {
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+  width: 100%;
+  padding: 40px 20px 20px 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text-overlay h1 {
+  font-size: 26px;
+  margin: 0 0 5px 0;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.text-overlay p {
+  font-size: 14px;
+  margin: 0;
+  opacity: 0.9;
+}
+.onecard{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+
+}
+
+        
+        
+       
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div>
+            <p id="pexels">pexels</p>
+        </div>
+        <div >
+            <ul  class="list">
+                <li>explore</li>
+                <li>license</li>
+                <li>icon</li>
+                <button>join</button>
+            
+            </ul>
+            
+        </div>
+
+    </header>
+    <main class="middle">
+        <div class="midleft">
+            <p class="leftpara">the best free stock photos,<br>royalty free images & videos shared by <br>
+                 creators</p>
+                 <div class="leftsearch">
+                    <p class="icon"><i class="fa-solid fa-image"></i>photos</p>
+                    <input type="text" placeholder="search for free photos ">
+                 </div>
+
+        </div >
+        <div class="onecard">
+        <div class="fashion-card">
+  <div class="text-overlay">
+    <h1>Summer Street Style</h1>
+    <p>Ruffled Lace Blouse & Peach Trousers</p>
+  </div>
+</div>
+<div class="rytcard">
+    <div class="textphoto">
+        <h2>fashion style of</h2>
+        <p>african tribes</p>
+    </div>
+
+</div>
+</div>
+
+      
+
+
+    </main>
+    <main class="belowmid">
+        <div class="belowlist">
+            <ul class="midlist">
+                <li id="home">home</li>
+                <li>videos</li>
+                <li>leaderboard</li>
+                <li>challenges</li>
+                <li>winners wall</li>
+                <li>the level up</li>
+            </ul>
+
+        </div>
+        <div class="belowhome">
+            <p>free stock photos</p>
+            <p>trending</p>
+
+        </div>
+       
+    </main>
+   <main class="card">
+    <div class="firstcard">
+       <div class="pop"> <p>popular</p>
+        <p>see more</p>
+        </div>
+        <ul class="firstlist">
+            <li>wallpaper</li>
+            <li>background</li>
+            <li>flowers</li>
+            <li>landscapes</li>
+        </ul>
+
+    </div>
+    <div class="seccard">
+        <div class="secpop">
+        <p>trending</p>
+        <p>see more</p>
+        </div>
+        <ul class="seclist">
+            <li>world cup</li>
+            <li>wedding</li>
+            <li>graduation</li>
+            <li>beach</li>
+        </ul>
+
+
+    </div>
+
+   </main>
+   <main class="photosection">
+    <div class="photoarrange">
+        <img src="https://images.pexels.com/photos/38385995/pexels-photo-38385995.jpeg" alt="frstimg" width="500px">
+    </div>
+    <div class="linephoto">
+        <img src="https://images.pexels.com/photos/36967061/pexels-photo-36967061.jpeg" alt="secimg" width="300px" height="400px">
+    </div>
+    <div>
+        <img src="https://content.pexels.com/images/canva/canva-branded-ads/en-US/video-social-fresh_640w.png" alt="" width="300px">
+    </div>
+    <div>
+        <video src="video.mp4" width="350px" controls></video>
+    </div>
+
+   </main>
+   <main class="photosection2">
+    <div>
+        <img src="https://images.pexels.com/photos/31792574/pexels-photo-31792574.jpeg" alt="" width="200px">
+    </div>
+
+   </main>
+</body>
+</html>

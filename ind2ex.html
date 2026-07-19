@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            /* background-color: #F2F3F5; */
+        }
+        .navbar{
+            background-color: #E4E6EB;
+            padding: 14px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .fb{
+            margin-right: 200px;
+        }
+        .fa-facebook-f{
+            font-size: larger;
+            margin-right: 5px;
+            margin-top: 2px;
+            color: blue;
+        }
+        .navbar i{
+            font-size: 20px;
+            /* color: ; */
+        }
+        .toprightside{
+            display: flex;
+            gap: 40px;
+        }
+        .fb input::placeholder{
+            padding: 7px;
+            font-family: cursive;
+            border: 1px solid #E4E6EB;
+            /* background-color: #; */
+        }
+        .fb input{
+            border-radius: 5px;
+            padding: 5px;
+
+        /* }
+        .leftsidename{ */
+            
+        }
+        .left{
+            width: 250px;
+            /* list-style-type: none; */
+        }
+        .list{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            background-color: #F2F3F5;
+            margin-top: 30px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .body{
+            width:250px;
+            text-transform: capitalize;
+            background-color: #F2F3F5;
+            display: flex;
+            width: 100%;
+            gap: 100px;
+            
+
+        }
+        .listss{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-weight:500;
+        }
+        .bottomlist{
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-weight: 400;
+        }
+        .list button{
+            /* color: aquamarine; */
+            background-color: #E4E6EB;
+            border-radius: 12px;
+            padding: 5px;
+        }
+       .list h3{
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 40px;
+        
+       }
+       .story{
+        display: flex;
+        /* flex-direction: column; */
+        gap: 40px;
+        margin-top: 20px;
+        /* background-color: gray; */
+        
+
+      
+       }
+       .story2{
+        border: 1px solid #E4E6EB;
+        height: 220px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* margin-left: 10px; */
+        padding-bottom: 2px;
+        padding-left: 4px;
+        background-color: white;
+        width: 115px;
+
+       }
+       .story3{
+        border: 1px solid #E4E6EB;
+        width: 115px;
+        height: 220px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* margin-left: 10px; */
+        padding-bottom: 2px;
+        padding-left: 4px;
+        background-color: white;
+        
+
+       }
+       .story4{
+        border: 1px solid #E4E6EB;
+        width: 115px;
+        height: 220px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* margin-left: 10px; */
+        padding-bottom: 2px;
+        padding-left: 4px;
+        background-color: white;
+       }
+       .story1{
+        border: 1px solid #E4E6EB;
+        width: 115px;
+        height: 220px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* margin-left: 10px; */
+        padding-bottom: 2px;
+        padding-left: 4px;
+        background-color: white;
+        
+
+       }
+      
+       
+       .story5{
+        border: 1px solid #E4E6EB;
+        width: 115px;
+        height: 220px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        /* margin-left: 10px; */
+        padding-bottom: 2px;
+        padding-left: 4px;
+        background-color: white;
+       }
+       .rightside{
+        display: flex;
+        flex-direction: column;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        /* gap: 20px; */
+        
+        
+       }
+       .rightlist{
+        margin-top: 20px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        border: 1px solid #E4E6EB;
+        height: 450px;
+        width: 250px;
+        border-radius: 15px;
+        background-color: white;
+        padding-top: 20px;
+        padding-right: 10px;
+       }
+       .lowlists{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style-type: none;
+       }
+       .placeholder{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        /* background-color: black; */
+       }
+       .placeholder input{
+        padding: 5px 160px 5px 20px;
+        border-radius: 10px;
+        background-color: #F0F2F5;
+       }
+       .middlelist{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        gap: 20px;
+        margin-top: 30px;
+        margin-right: 20px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+       }
+       .towrap{
+        border: 1px solid #E4E6EB;
+        margin-top: 30px;
+        margin-left: 30px;
+        border-radius: 12px;
+        background-color: white;
+        padding-bottom: 10px;
+        /* padding-right: -20px; */
+        width: 700px;
+       }
+       .midlast{
+        display: flex;
+        flex-direction: column;
+        
+        /* align-items: center; */
+        margin-right: 100px;
+        gap: 10px;
+        border: 1px solid #E4E6EB;
+        border-radius: 22px;
+        background-color:#FFFFFF;
+        margin-top: 20px;
+        margin-left: 80px;
+        /* padding-left: 5px; */
+        width: 600px;
+     
+ }
+       #name{
+        font-family: cursive;
+        /* margin-right: 85px; */
+        margin-left: 20px;
+        margin-top: 20px;
+       }
+       #line{
+        margin-left: 12px;
+       }
+       .rightlist li i{
+        width: 35px;
+        margin-right: 10px;
+       }
+       .list i{
+        margin-right: 20px;
+       }
+       .headmiddle{
+        display: flex;
+        justify-content: space-around;
+        gap: 150px;
+        /* margin-right: 500px; */
+       }
+       
+
+        
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="fb"><i class="fa-brands fa-facebook-f"></i>
+            <input type="text" placeholder="Search Facebook"></div>
+            <div class="headmiddle"><i class="fa-solid fa-house"></i>
+            <i class="fa-solid fa-tv"></i>
+            <i class="fa-solid fa-shop"></i>
+            <i class="fa-solid fa-people-line"></i>
+            </div>
+            <i class="fa-light fa-restroom-simple"></i>
+            <div class="toprightside">
+            <i class="fa-solid fa-plus"></i>
+            <i class="fa-brands fa-facebook-messenger"></i>
+            <i class="fa-solid fa-bell"></i>
+            </div>
+
+
+        </div>
+
+    </header>
+    <main class="body">
+        <div class="list">
+            <ul class="listss">
+                <li>Ganesh Dhakal</li>
+                <li><i class="fa-solid fa-tv"></i>watch</li>
+                <li><i class="fa-solid fa-calendar"></i>events</li>
+                <li><i class="fa-solid fa-user-group"></i>friends</li>
+                <li><i class="fa-solid fa-clock"></i>memories</li>
+            </ul>
+            <button>see more </button>
+            <hr>
+            <h3>shortcuts </h3>
+            <ul class="bottomlist">
+                <li><i class="fa-solid fa-film"></i>save the  theatre</li>
+                <li><i class="fa-solid fa-car"></i>weekend trips</li>
+                <li><i class="fa-solid fa-shop"></i>jasper's market</li>
+                <li><i class="fa-solid fa-users-rays"></i>red table talk group</li>
+                <li><i class="fa-solid fa-road"></i>best  hiking trails</li>
+            </ul>
+            <button>see more</button>
+        </div>
+        <div class="middle">
+        <div class="story">
+            <div class="story1">
+                <p>add to <br>story</p>
+                <!-- <img src="hero.jpg" alt="ganeshhero"> -->
+            </div>
+            <div class="story2">
+                <p>add to <br> story</p>
+            </div>
+            <div class="story3">
+                <p>add to <br> story</p>
+            </div>
+            <div class="story4">
+                <p>add to <br>story</p>
+            </div>
+            <div class="story5">
+                <p>add to <br> story</p>
+            </div>
+            
+
+        </div>
+        <div class="towrap">
+        <div class="placeholder">
+            <input type="text" placeholder="what's on your mind?">
+            <!-- <hr> -->
+        </div>
+        <div>
+            <ul class="middlelist">
+                <li><i class="fa-solid fa-image"></i>photo/image</li>
+                <li><i class="fa-solid fa-user-tag"></i>tag ganesh</li>
+                <li><i class="fa-solid fa-face-smile"></i>feeling/activity</li>
+            </ul>
+            </div>
+            
+        </div>
+        <div class="midlast">
+            <p id="name"><strong>Ganesh Dhakal</strong></p>
+            <p id="line">best place I've ever seen.....</p>
+            <img src="https://hips.hearstapps.com/hmg-prod/images/great-ocean-road-174028267-1494616481.jpg?crop=1.00xw:1.00xh;0,0&resize=1200:*" alt="bestphoto" width="600px">
+
+
+
+        </div>
+        </div>
+       <div class="rightside">
+        
+        <!-- <hr> -->
+        <ul class="rightlist">
+            <p>ganesh dhakal</p>
+            <li><i class="fa-solid fa-gear"></i>settings and privacy<i class="fa-solid fa-greater-than"></i></li>
+            <li><i class="fa-solid fa-question"></i>help and support<i class="fa-solid fa-greater-than"></i></li>
+            <li><i class="fa-solid fa-moon"></i>dark mode<i class="fa-solid fa-toggle-on"></i></li>
+            <li><i class="fa-solid fa-arrow-left"></i>switch to classic facebook</li>
+            <li><i class="fa-solid fa-exclamation"></i>send feedback</li>
+            <li><i class="fa-solid fa-arrow-right-from-bracket"></i>log out</li>
+            <p>privacy.terms.advertising.ad choices. cookies 
+        more.facebook</p>
+        </ul>
+        <br>
+        <div class="lowerlist">
+            <ul class="lowlists">
+                <li>eric jones</li>
+                <li>cynthia lopez</li>
+                <li>betty chen</li>
+                <li>tina lim</li>
+                <li>molly carter</li>
+            </ul>
+
+        </div>
+        
+       </div>
+
+    </main>
+    <footer></footer>
+    
+</body>
+
+</html>
